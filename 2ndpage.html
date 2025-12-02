@@ -1,55 +1,94 @@
 <!DOCTYPE html>
 <html>
-<style>
-    
-  body{ 
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: white;
-    background-color: black;
-  }
-  h1{
-    border-bottom: 2px solid white;
-    padding-bottom: 4px;
-    margin-bottom: 10px;
-  }
-  a{
-    color:blue
-  }
-
-
-</style>
-  <head>
+<head>
     <title>2ndpage</title>
+
+    <style>
+        body { 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+            padding: 20px;
+        }
+        h1 {
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: blue;
+        }
+
+        /* Fortune button styling */
+        #fortuneBtn {
+            margin-top: 20px;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid white;
+            background-color: #222;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #fortuneBtn:hover {
+            background-color: #444;
+        }
+    </style>
+
+    <script>
+        function getFortune() {
+            const fortunes = [
+                "You will make a great decision soon.",
+                ".",
+                "You will be great one day.",
+                "Gamble today, you'll win.",
+                "You will meet someone important soon."
+            ];
+            
+            const randomIndex = Math.floor(Math.random() * fortunes.length);
+            alert(fortunes[randomIndex]);
+        }
+    </script>
+</head>
+
+<body>
+
     <h1>I am Joshua Meyer</h1>
-    <p>I am a student and work at starbucks currently. I go to Warren tech for cybersecurity and to get my High school degree.</p>
 
-    <h3>Starbucks: </h3>
+    <p>
+        I am a student and work at Starbucks currently.  
+        I go to Warren Tech for cybersecurity and to get my high school degree.
+    </p>
 
-    <p>I have worked at starbuck for around eight months now. I have learned many skills like:</p>
+    <h3>Starbucks:</h3>
+
+    <p>I have worked at Starbucks for around eight months now. I have learned many skills like:</p>
     
     <ol>
-      <li>Time managment</li>
-      <li>Customer Service</li>
-      <li>Being a team member</li>
-      <li>Communication</li>
-      <li>Organization</li>
+        <li>Time management</li>
+        <li>Customer Service</li>
+        <li>Being a team member</li>
+        <li>Communication</li>
+        <li>Organization</li>
     </ol>
 
-    <p>I am an eagle scout and trhough gettin this rank I have learned: </p>
+    <p>I am an Eagle Scout, and through getting this rank I have learned:</p>
 
     <ul>
-      <li>Leadership</li>
-      <li>Teamwork</li>
-      <li>Cooking</li>
-      <li>Citizenship</li>
-      <li>First aid</li>
-      <li>Personal managment</li>
+        <li>Leadership</li>
+        <li>Teamwork</li>
+        <li>Cooking</li>
+        <li>Citizenship</li>
+        <li>First aid</li>
+        <li>Personal management</li>
     </ul>
 
     <a href="https://www.themountaintroop.org/">Troop 737 website</a><br>
+    <a href="https://www.starbucks.com/">Starbucks website</a><br>
+    <a href="index.html">Back to Home</a><br><br>
 
-    <a href="https://www.starbucks.com/">Star bucks website</a><br>
+    <!-- Fortune button -->
+    <button id="fortuneBtn" onclick="getFortune()">Get a Fortune</button>
 
-    <a href="index.html">Back to home</a><br>
-  </head>
+</body>
 </html>

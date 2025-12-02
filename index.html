@@ -2,48 +2,97 @@
 <html>
 <head>
     <title>My GitHub Pages Website</title>
+
+    <style>
+        /* ---------------------- */
+        /* LIGHT MODE STYLES      */
+        /* ---------------------- */
+        body.light {
+            background-color: white;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        body.light h1 {
+            border-bottom: 2px solid black;
+        }
+
+        body.light a {
+            color: blue;
+        }
+
+        /* ---------------------- */
+        /* DARK MODE STYLES       */
+        /* ---------------------- */
+        body { 
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+            background-color: black;
+        }
+
+        h1 {
+            border-bottom: 2px solid white;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: blue;
+        }
+
+        /* Toggle button styling (optional) */
+        #modeBtn {
+            margin-bottom: 20px;
+            padding: 8px 14px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 1px solid gray;
+            background-color: #222;
+            color: white;
+        }
+
+        body.light #modeBtn {
+            background-color: #ddd;
+            color: black;
+        }
+
+    </style>
 </head>
-<style>
-    
-    body{ 
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        color: white;
-        background-color: black;
-    }
-    h1{
-        border-bottom: 2px solid white;
-        padding-bottom: 4px;
-        margin-bottom: 10px;
-    }
-    a{
-        color:blue
-    }
 
-
-</style>
 <body>
+
+    <button id="modeBtn" onclick="toggleMode()">Toggle Light/Dark Mode</button>
+
     <h1>Hello, I am Josh Meyer</h1>
-    <p>I am currentely a student at Warren Tech studying Cybersecurity, Coding, and Computer Science.</p>                 
-             
+    <p>I am currently a student at Warren Tech studying Cybersecurity, Coding, and Computer Science.</p>                 
+
     <p>My Links:</p>
 
     <a href="https://github.com/liljimmy12">Github</a> 
-    <a href="https://www.linkedin.com/in/joshua-meyer-33862a386/" target="_blank">linkedin</a>
-
+    <a href="https://www.linkedin.com/in/joshua-meyer-33862a386/" target="_blank">LinkedIn</a>
 
     <h3>About me</h3>
-
     <p>I am really into photography, I play video games, and have a lot of pets.</p>
 
-    <h5>Some photos from my camera</h5>                                                                                                                        
-    <img src="dog_3.jpg" alt="My dog named Cleo" width="200" height="200"><br>                                                                                                                                                                                                                                                                                                                           
+    <h5>Some photos from my camera</h5>
 
-    <img src="clouds_1.jpg" alt="My neigbor's house" width="200" height="200">
+    <img src="dog_3.jpg" alt="My dog named Cleo" width="200" height="200"><br>
+
+    <img src="clouds_1.jpg" alt="My neighbor's house" width="200" height="200">
     <img src="clouds_2.jpg" alt="Sunset" width="200" height="200">
-    <img src="clouds_3.jpg" alt="Outside my house" width="200" height="200"><br>                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+    <img src="clouds_3.jpg" alt="Outside my house" width="200" height="200"><br>
 
-    <a href="https://www.emilytcarterphotography.com/blog/a-quick-guide-to-colorados-best-photoshoot-locations">Best photography spots in Colorado</a><br>                                                                                                                                                                                                                                                                                             
+    <a href="https://www.emilytcarterphotography.com/blog/a-quick-guide-to-colorados-best-photoshoot-locations">
+        Best photography spots in Colorado
+    </a><br>
 
     <a href="2ndpage.html">About my experience</a>
+
+    <script>
+        function toggleMode() {
+            document.body.classList.toggle("light");
+        }
+    </script>
+
 </body>
 </html>
